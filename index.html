@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Mihael Presečan — On the Technical Direction of AI Products</title>
-<meta name="description" content="Mihael Presečan — AI technical direction, stated as a proof. Four lemmas — diagnosis, construction, depth, handover — each with dated, linked evidence. Head of AI / lead engineer for AI products, based in Croatia, remote across the EU.">
+<meta name="description" content="Mihael Presečan — forward deployed engineer. A portfolio stated as a proof: four lemmas — diagnosis, construction, depth, handover — each with dated, linked evidence. Available for contract, fractional and permanent AI engineering work, based in Poland, remote across the EU and the US.">
 <meta name="author" content="Mihael Presečan">
-<meta name="keywords" content="Mihael Presečan, AI technical direction, Head of AI, AI engineering lead, machine learning engineer, CTO, fractional AI, Croatia, Upclick, Layron">
+<meta name="keywords" content="Mihael Presečan, forward deployed engineer, applied AI engineer, founding engineer, AI technical direction, Head of AI, AI engineering lead, machine learning engineer, CTO, fractional AI, Poland, EU, US, Upclick, Layron">
 <link rel="canonical" href="https://www.michaelpresecan.com/">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <meta name="theme-color" content="#ffffff">
@@ -151,6 +151,8 @@ section{padding:34px 0}
 .rec a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--rule-2)}
 .rec a:hover{background:var(--mark)}
 
+.avail{margin:6px 0 22px;padding-left:18px;border-left:2px solid var(--mark);color:var(--ink-2);font-size:17.5px}
+.avail b{color:var(--ink);font-weight:600;background:linear-gradient(var(--mark-soft),var(--mark-soft));background-size:100% .62em;background-position:0 .82em;background-repeat:no-repeat}
 .ct{font-family:var(--m);font-size:14px;margin-top:8px}
 .ct a{display:flex;gap:16px;padding:10px 0;border-bottom:1px solid var(--rule);text-decoration:none;color:var(--ink-2)}
 .ct a:hover{color:#000}
@@ -229,9 +231,10 @@ footer{padding:38px 0 56px;font-family:var(--m);font-size:10px;letter-spacing:.1
       "url": "https://www.michaelpresecan.com/",
       "image": "https://www.michaelpresecan.com/og-image.png",
       "email": "hello@michaelpresecan.com",
-      "jobTitle": "Technical Director, AI Products",
-      "description": "AI technical direction — diagnosis, construction, depth and handover. Head of AI / lead engineer for AI products.",
+      "jobTitle": "Forward Deployed Engineer",
+      "description": "Forward deployed engineer — diagnosis, construction, depth and handover. Takes a customer from problem to production on AI products; also founding or lead engineer, head of AI, and fractional engagements.",
       "nationality": "Croatian",
+      "homeLocation": { "@type": "Place", "name": "Poland" },
       "alumniOf": {
         "@type": "CollegeOrUniversity",
         "name": "University of Zagreb, Faculty of Electrical Engineering and Computing (FER)"
@@ -245,6 +248,7 @@ footer{padding:38px 0 56px;font-family:var(--m);font-size:10px;letter-spacing:.1
         "Artificial Intelligence",
         "Machine Learning",
         "AI Product Engineering",
+        "Forward Deployed Engineering",
         "Technical Architecture",
         "Computer Vision",
         "Natural Language Processing",
@@ -296,7 +300,7 @@ footer{padding:38px 0 56px;font-family:var(--m);font-size:10px;letter-spacing:.1
 
 <!-- ============ TITLE ============ -->
 <div class="blk title">
-  <div class="mg"><b>Preprint</b>2026 · Croatia<br>Rev. 1</div>
+  <div class="mg"><b>Preprint</b>2026 · Poland<br>Rev. 2</div>
   <div class="bd">
     <h1>On the Technical Direction of AI Products</h1>
     <p class="sub">with a proof of one particular case</p>
@@ -472,30 +476,54 @@ footer{padding:38px 0 56px;font-family:var(--m);font-size:10px;letter-spacing:.1
     <div class="item" id="c1">
       <span class="lab">Corollary 1.</span>
       <span class="st">He is most valuable before the architecture is settled.</span>
-      <div class="pf">Head of AI or AI engineering lead; founding or lead engineer on an AI product; CTO of a small
-      technical team; or a fractional engagement where the question is which direction, not how many hands.</div>
+      <div class="pf">Read in order, <a class="ref" href="#l1" data-t="l1">L1</a>–<a class="ref" href="#l4" data-t="l4">L4</a>
+      are the job description of a <b>forward deployed engineer</b>: find the real constraint, build the thing
+      yourself, know what the model is doing when the abstraction leaks, then hand it over. So: forward deployed or
+      applied AI engineer, taking a customer from problem to production; founding or lead engineer on an AI product;
+      head of AI or AI engineering lead; CTO of a small technical team; or a fractional engagement where the question
+      is which direction, not how many hands.</div>
     </div>
     <div class="item" id="c2">
       <span class="lab">Corollary 2.</span>
-      <span class="st">He is least valuable once a system is stable and the work becomes maintenance.</span>
-      <div class="pf">This follows from the same properties that make <a class="ref" href="#c1" data-t="c1">Corollary 1</a>
-      true, and it is stated here rather than discovered in month seven.</div>
+      <span class="st">He is a zero-to-one engineer: the work he is for is the first version and the architecture it commits you to.</span>
+      <div class="pf">This is the same property that makes <a class="ref" href="#c1" data-t="c1">Corollary 1</a> true,
+      read from the other side, and it is worth saying in the first conversation rather than the seventh month.
+      The right brief is one where the shape of the system is still an open question — a new product, a rewrite,
+      a pipeline that has stopped scaling, a customer to be taken from problem to production. Once the shape is
+      settled and the team is running it, <a class="ref" href="#l4" data-t="l4">L4</a> has already done its job.</div>
     </div>
   </div>
 </section>
 
 <!-- ============ REMARK ============ -->
 <section class="blk">
-  <div class="mg"><b>§6</b>On the absence of a metric</div>
+  <div class="mg"><b>§6</b>Which numbers exist, and which do not</div>
   <div class="bd">
-    <div class="sn">6 · Remark</div>
+    <div class="sn">6 · Remark on the numbers</div>
     <div class="item" id="rem">
       <span class="lab">Remark 1 (on numbers).</span>
-      <span class="st">No growth curve is offered here, because none exists yet.</span>
-      <div class="pf">Upclick is bootstrapped and still being built. There is no customer count, no revenue chart
-      and no retention figure, and inventing one would violate
-      <a class="ref" href="#d3" data-t="d3">Definition 3</a> and, with it, everything above.
-      The system and the reasoning behind it are the evidence. The metrics are not yet.</div>
+      <span class="st">The numbers on this page are engineering numbers. There is no growth curve, because none exists yet.</span>
+      <div class="pf">Three figures above satisfy <a class="ref" href="#d3" data-t="d3">Definition 3</a> — each has a
+      date, a name and, where one exists, a link. They are collected here so they are not missed.
+      <ol class="ev">
+        <li><span class="src"><b>(a) Layron</b>Recent<a href="https://layron.ai" target="_blank" rel="noopener">layron.ai ↗</a></span>
+          <span class="cl"><b>Three weeks against six months.</b> A prototype built in three weeks outperformed what
+          six months of work on the existing stack had produced
+          (<a class="ref" href="#l1" data-t="l1">L1</a> (a)).</span></li>
+        <li><span class="src"><b>(b) Klick17</b>2019–24<a href="https://sellknow.com/" target="_blank" rel="noopener">sellknow.com ↗</a></span>
+          <span class="cl"><b>One framework in place of a restart per product.</b> Every client product had been
+          rebuilding the same foundation; one reusable framework replaced all of them, was open sourced, and is
+          still the engine underneath SellKnow (<a class="ref" href="#l1" data-t="l1">L1</a> (b),
+          <a class="ref" href="#l4" data-t="l4">L4</a> (b)).</span></li>
+        <li><span class="src"><b>(c) Upclick</b>Now<a href="https://upclick.me" target="_blank" rel="noopener">upclick.me ↗</a></span>
+          <span class="cl"><b>One person, end to end.</b> An acquisition pipeline from signal to a shipped live site,
+          plus the platform that hosts everything it produces, written by one engineer
+          (<a class="ref" href="#l2" data-t="l2">L2</a> (c)).</span></li>
+      </ol>
+      <p style="margin-top:14px">What is absent is the other kind of number. Upclick is bootstrapped and still being
+      built: there is no customer count, no revenue chart and no retention figure. Inventing one would violate
+      <a class="ref" href="#d3" data-t="d3">Definition 3</a> and, with it, everything above. The operating metrics
+      are not here yet. The engineering ones are, and they are the ones this theorem is about.</p></div>
     </div>
   </div>
 </section>
@@ -532,9 +560,11 @@ footer{padding:38px 0 56px;font-family:var(--m);font-size:10px;letter-spacing:.1
 
 <!-- ============ CONTACT ============ -->
 <section class="blk" id="contact">
-  <div class="mg"><b>Correspondence</b>Croatia · remote across the EU</div>
+  <div class="mg"><b>Correspondence</b>Based in Poland · remote across the EU and the US<br><br>Contract work is invoiced through Fortbit d.o.o. (HR) — no EOR, no local entity required, and the same for US clients.</div>
   <div class="bd">
     <div class="sn">Correspondence</div>
+    <p class="avail"><b>Available now</b> for contract and fractional engagements, and open to a permanent forward
+    deployed, applied-AI or founding engineering role. Remote across the EU and the US — the working day overlaps US Eastern through the afternoon — and on site when the work needs it.</p>
     <div class="ct">
       <a href="mailto:hello@michaelpresecan.com"><i>Email</i>hello@michaelpresecan.com</a>
       <a href="https://linkedin.com/in/michaelpresecan" target="_blank" rel="noopener"><i>LinkedIn</i>michaelpresecan</a>
